@@ -10,29 +10,27 @@ class App extends Component {
     randomUser,
   };
 
-  removeEmploye = (id) => {
-    // Filter this.state.randomUser for randomUser with an id not equal to the id being removed
-    const randomUser = this.state.randomUser.filter(
-      (randomUser) => randomUser.id !== id
-    );
-    // Set this.state.randomUser equal to the new randomUser array
-    this.setState({ randomUser });
-  };
-
   // Map over this.state.randomUser and render a EmployeeCard component for each randomUser object
   render() {
     return (
       <Wrapper>
         <Title>Employee List</Title>
+        {console.log("console: ")}
+        {console.log(this.state.randomUser)}
         {this.state.randomUser.map((randomUser) => (
           <EmployeeCard
-            removeEmployee={this.removeEmployee}
-            id={randomUser.id}
-            key={randomUser.id}
-            name={randomUser.name}
-            image={randomUser.image}
-            occupation={randomUser.occupation}
-            location={randomUser.location}
+            id={randomUser.id.value}
+            key={randomUser.phone}
+            title={randomUser.name.title}
+            firstName={randomUser.name.first}
+            lastName={randomUser.name.last}
+            // streetNumber={randomUser.location.street.number}
+            // streetName={randomUser.location.street.name}
+            // city={randomUser.location.city}
+            // state={randomUser.location.state}
+            phone={randomUser.phone}
+            email={randomUser.email}
+            picture={randomUser.picture.large}
           />
         ))}
       </Wrapper>
