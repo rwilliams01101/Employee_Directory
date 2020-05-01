@@ -7,7 +7,7 @@ function EmployeeCard(props) {
       <div className="img-container">
         <img alt={props.name} src={props.picture} />
       </div>
-      <div className="content">
+      <div className="content" id={props.id}>
         <ul>
           <li>
             <strong>Name:</strong> {props.title} {props.firstName}{" "}
