@@ -3,28 +3,18 @@ import "./style.css";
 
 function EmployeeCard(props) {
   return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.picture} />
-      </div>
-      <div className="content" id={props.id}>
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.title} {props.firstName}{" "}
-            {props.lastName}
-          </li>
-          <li>
-            <strong>Phone:</strong> {props.phone}
-          </li>
-          <li>
-            <strong>Email:</strong> {props.email}
-          </li>
-          {/* <li>
-            <strong>Location:</strong> {props.streetNumber} {props.streetName},{" "}
-            {props.city}, {props.state}
-          </li> */}
-        </ul>
-      </div>
+    <div className="container">
+      <tr id={props.id} className="text-center">
+        <td>
+          <img alt={props.name} src={props.picture} id="headshot" />
+        </td>
+        <td className="employeeName">
+          {props.title} {props.firstName} {props.lastName}
+        </td>
+        <td className="employeePhone">{props.phone}</td>
+        <td className="employeeEmail">{props.email}</td>
+        <td className="employeeDOB">{props.dob}</td>
+      </tr>
     </div>
   );
 }

@@ -1,47 +1,79 @@
-.card {
-  background: #fff;
-  border-radius: 2px;
-  height: 325px;
-  margin: 1rem;
-  position: relative;
-  width: 325px;
-  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-  text-align: left;
+.container {
+  width: 100%;
+  border-style: solid;
+  vertical-align: middle;
 }
 
-.card > .img-container {
-  height: 60%;
-  overflow: hidden;
-  text-align: center;
-  background:#6CADDC;
-}
-.card > .img-container > img {
-  width: 60%
+.employeeName {
+  padding-left: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: auto;
 }
 
-.card > .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
+.employeePhone {
+  padding-left: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: auto;
 }
 
-.card > .content > ul {
-  list-style-type: none;
+.employeeEmail {
+  padding-left: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: auto;
 }
 
-.card > .content > ul > li {
-  margin-top: 18px;
+.employeeDOB {
+  margin-right: -40px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
 
-.card > .remove {
-  color: #ff1744;
-  font-size: 48px;
-  position: absolute;
-  top: -20px;
-  right: 5px;
-  cursor: pointer;
+.instructions {
+  margin-top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: rgb(0, 0, 88);
+  color: whitesmoke;
 }
 
-.card > .remove:hover {
-  color: #d50000;
+.redDiv {
+  background-color: red;
+  width: 100%;
+  height: 5px;
+  margin-top: 0px;
+}
+
+.name {
+  padding-left: 200px;
+}
+
+.phone {
+  padding-left: 200px;
+}
+
+.email {
+  padding-left: 200px;
+}
+
+.DOB {
+  padding-left: 200px;
+}
+
+.employeeName {
+  padding-left: 130px;
+}
+
+.employeePhone {
+  padding-left: 130px;
+}
+
+.employeeEmail {
+  padding-left: 100px;
+}
+
+.employeeDOB {
+  padding-left: 30px;
 }

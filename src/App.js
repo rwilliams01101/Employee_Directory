@@ -14,20 +14,33 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Employee List</Title>
+        <Title>Employee Directory</Title>
+        <div className="text-center instructions">
+          Click on carrots to filter by heading or use the search box to narrow
+          your results.
+        </div>
+        <hr className="redDiv" />
+        <table className="text-justified">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th className="name">Name</th>
+              <th className="phone">Phone</th>
+              <th className="email">Email</th>
+              <th className="DOB">DOB</th>
+            </tr>
+          </thead>
+        </table>
         {console.log("console: ")}
         {console.log(this.state.randomUser)}
         {this.state.randomUser.map((randomUser) => (
           <EmployeeCard
             id={randomUser.id.value}
-            key={randomUser.phone}
+            key={randomUser.id.value}
             title={randomUser.name.title}
             firstName={randomUser.name.first}
             lastName={randomUser.name.last}
-            // streetNumber={randomUser.location.street.number}
-            // streetName={randomUser.location.street.name}
-            // city={randomUser.location.city}
-            // state={randomUser.location.state}
+            dob={randomUser.dob.date}
             phone={randomUser.phone}
             email={randomUser.email}
             picture={randomUser.picture.large}
