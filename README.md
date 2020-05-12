@@ -1,6 +1,6 @@
 ## Employee Tracker
 ## Description
-This application will help you easily locate your employee information. Includes a picture, name, age, phone number, location, and date of birth.
+This application will help you easily locate your employee information. Includes a picture, name, phone number, email, and date of birth.
 ## Table of Contents
 * [Installation](#installation) 
 ,[Usage](#usage) 
